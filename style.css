@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    background: #ede7f6;
+}
+footer{
+    position: relative;
+    background: #111;
+    padding: 50px 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+/* footer .container .icons{
+    width: 40%;
+} */
+footer .container h2{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999999;
+}
+.icons{
+    margin-top: 20px;
+    display: flex;
+}
+.icons li{
+    list-style: none;
+}
+.icons li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.icons li a:hover{
+    background: #f00;
+}
+.icons li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+    left: 0;
+    top: 0;
+}
+footer .container .quickLinks h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: #f00;
+}
+.quickLinks ul li{
+    list-style: none;
+    margin-bottom: 8px;
+
+}
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    text-decoration: none;
+    color: #999999;
+}
+.contact .info li a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.copyright{
+    width: 100%;
+    background: #181818;
+    padding: 10px 100px;
+    text-align: center;
+    color: #999;
+}
+@media (max-width: 985px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    footer .container .sec.aboutus,
+    .quickLinks,
+    .contact{
+        width: 100%;    
+    }
+    .copyright{
+        padding: 8px 60px;
+    }
+}
+
+
